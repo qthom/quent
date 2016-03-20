@@ -5,7 +5,7 @@ import subprocess
 #.................run psi-blast.......................................
 
 
-#subprocess.call('blastpgp -a 3 -j 3 -d /home/thomas/blast/uniref90.fasta -i '!!!!INPUT_SEQUENCE!!!!!' -o /home/thomas/Desktop/19-02-2016-DSSPhelix-project/webserver/psi_file.psi', shell=True)
+subprocess.call('blastpgp -a 3 -j 3 -d /home/thomas/blast/uniref90.fasta -i '!!!!INSERT INPUT_SEQUENCE!!!!!' -o /home/thomas/Desktop/19-02-2016-DSSPhelix-project/webserver/psi_file.psi', shell=True)
 
 
 #..................process psi-output..................................
@@ -38,7 +38,7 @@ for a,b in result:
     
 subprocess.call('/home/thomas/svm_light/svm_classify /home/thomas/Desktop/19-02-2016-DSSPhelix-project/webserver/feature.svm /home/thomas/Desktop/19-02-2016-DSSPhelix-project/output/cross_validation_svm/svm_models_pred/psi_blast/Models_psi/final_model_kernel2.svm /home/thomas/Desktop/19-02-2016-DSSPhelix-project/webserver/prediction.pred', shell=True)
 
-#................prediction............
+#................prediction output..................................
 
 
 target_pred = open('/home/thomas/Desktop/19-02-2016-DSSPhelix-project/webserver/prediction.pred','r').read().splitlines()
