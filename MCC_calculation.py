@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Mar 11 16:20:17 2016
-
-@author: thomas
-"""
 import math
 target_value = open('/home/thomas/Desktop/19-02-2016-DSSPhelix-project/output/cross_validation_svm/extracted_features_sets/psi_blast/topo_sets/extracted_features_psi2.topo','r').read().splitlines()
 target_pred = open('/home/thomas/Desktop/19-02-2016-DSSPhelix-project/output/cross_validation_svm/svm_models_pred/psi_blast/prediction_psi/set2_c05_g2.pred','r').read().splitlines()
